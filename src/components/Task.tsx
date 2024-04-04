@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ChangeEvent } from 'react';
+import React, { useState, useEffect } from 'react';
 import DeleteIcon from '../assets/icons8-delete.svg';
 import CheckIcon from '../assets/icons8-check.png';
 
@@ -13,7 +13,7 @@ interface Task {
 const AppTask: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [task, setTask] = useState('');
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     fetchtasks();
