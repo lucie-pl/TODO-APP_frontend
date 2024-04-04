@@ -159,7 +159,7 @@ const AppTask: React.FC = () => {
                       outline: 'none',
                     }}
                   >
-                    <img src={CheckIcon} alt="check" width="20px" />
+                    <img src={CheckIcon} alt="check" />
                   </button>
                 </td>
                 <td>
