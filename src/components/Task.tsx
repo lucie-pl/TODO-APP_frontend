@@ -2,7 +2,7 @@ import React, { useState, useEffect, ChangeEvent } from 'react';
 import DeleteIcon from '../assets/icons8-delete.svg';
 import CheckIcon from '../assets/icons8-check.png';
 
-const url = 'http://localhost:3000/todo_tasks';
+const url = 'https://todo-api-jpcm.onrender.com/todo_tasks';
 
 interface Task {
   id: number;
