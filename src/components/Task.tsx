@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import DeleteIcon from '/icons_check.png';
+import DeleteIcon from '/icons_checked.png';
 import CheckIcon from '/icons_delete.svg';
 
 const url = 'https://todo-api-jpcm.onrender.com/todo_tasks';
