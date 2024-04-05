@@ -70,6 +70,7 @@ const AppTask: React.FC = () => {
     setTasks([]);
   };
 
+  const uncompletedTasks = tasks.filter((task) => task.completed == false);
   return (
     <div>
       <h1 style={{ fontSize: '40px' }}>Todo List</h1>
@@ -179,19 +180,19 @@ const AppTask: React.FC = () => {
         </tbody>
       </table>
       <div>
-        {tasks.length <= 0 && (
+        {uncompletedTasks.length <= 0 && (
           <p style={{ fontStyle: 'italic' }}>
             No task pending. Feel free to add one ! 📝
           </p>
         )}
-        {tasks.length == 1 && (
+        {uncompletedTasks.length == 1 && (
           <p style={{ fontStyle: 'italic' }}>
-            You have {tasks.length} task pending.
+            You have {uncompletedTasks.length} task pending.
           </p>
         )}
-        {tasks.length > 1 && (
+        {uncompletedTasks.length > 1 && (
           <p style={{ fontStyle: 'italic' }}>
-            You have {tasks.length} tasks pending.
+            You have {uncompletedTasks.length} tasks pending.
           </p>
         )}
         {tasks.length > 0 && (
